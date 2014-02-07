@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Kedar Aitawdekar -- Front-end Designer and Coder 
 
 # THANKS
 
-    <name>
+    Team of HTML5Boilerplate and Github
 
 # TECHNOLOGY COLOPHON
 
