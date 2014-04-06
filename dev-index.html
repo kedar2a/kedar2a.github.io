@@ -50,6 +50,10 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/foundation.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <style type="text/css">
+        	#morning-div img {	width: 100%; height: 100%;	}
+        </style>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -58,34 +62,59 @@
 
 
         <!-- ::::::::::::::::: Body content ::::::::::::::::: -->
-        
-        <h1>Hello world! This is Kedar Aitawdekar . . . . comng soon !</h1>  
-        <div class="row">
+                
+        <!-- <div class="row">
             <div class="small-6 columns">Have a nice day</div>
             <div class="small-6 columns">....bye !</div>
+        </div> -->
+        <div id="morning-div">
+        	<div>
+        		<img src="img/good_morning(1024x682).jpg"/>
+        	</div>
         </div>
 
         <!-- ::::::::::::::::: The end Of Body content ::::::::::::::::: -->
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        
+        <!-- Including all js scripts -->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        
+        <!-- Write your temporarory script here -->
         <script>
 
-            var now = new Date();
-            if ((now.getHours() >= 20) && (now.getMinutes() > 0) )
-            {   alert("Hello Dear"); }
+        	// Deciding time at client side
+      //       var now = new Date();
 
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+      //       if ((now.getHours() >= 20) && (now.getMinutes() > 0) )
+      //       {   
+      //       	alert("Hello Dear"); 
+      //       }
+      //   	else if ((now.getHours() >= 17) && (now.getMinutes() > 0) )
+      //       {
+      //       	alert("Good Evening ! dear,");
+    		// }
+    		// else if ((now.getHours() >= 11) && (now.getMinutes() > 30) )
+      //       {
+      //       	alert("Good Afternoon ! dear,");
+    		// }
+    		// else if ((now.getHours() >= 4) && (now.getMinutes() > 0) )
+      //       {
+      //       	alert("Good Morning ! dear,");
+    		// }
+
+
+            // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            // e.src='//www.google-analytics.com/analytics.js';
+            // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            // ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
     </body>
 </html>
