@@ -53,29 +53,40 @@
 
 	<style type="text/css">
 
-		#morning-div img {
+	html, body { height:100%; }
+
+		#morning-div{
+
+			background-color: #808080;
+	    	background-image: url("img/good_morning(1024x682).jpg");
+	    	height: 100vh;
+		}
+
+		.main-big-text{
+			color: #FFFFFF;
+    display: block;
+    font-size: 7em;
+    margin-left: 13%;
+    margin-right: 13%;
+    padding-top: 20%;
+		}
+
+		/*#morning-div img {*/
 
 			/* Set rules to fill background */
-			min-height: 100%;
+			/*min-height: 100%;
 			min-width: 1024px;
 
-			/* Set up proportionate scaling */
+			 Set up proportionate scaling 
 			width: 100%;
 			height: auto;
-
+*/
 			/* Set up positioning */
-			position: fixed;
+			/*position: fixed;
 			top: 0;
-			left: 0;
-		}
+			left: 0;*/
+		/*}*/
 
-		@media screen and (max-width: 1024px) { 
-			/* Specific to this particular image */
-			#morning-div img {
-				left: 50%;
-				margin-left: -512px;   /* 50% */
-			}
-		}
 	</style>
 </head>
 <body>
@@ -84,15 +95,16 @@
             <![endif]-->
 
 
-            <!-- ::::::::::::::::: Body content ::::::::::::::::: -->
+        <!-- ::::::::::::::::: Body content ::::::::::::::::: -->
 
-        <!-- <div class="row">
-            <div class="small-6 columns">Have a nice day</div>
-            <div class="small-6 columns">....bye !</div>
-        </div> -->
-        <div id="morning-div">
-        	<div>
-        		<img src="img/good_morning(1024x682).jpg"/>
+        <div>
+        	<div id="morning-div" >
+        		<div class="main-big-text">
+        			Good Morning,
+        			<br>
+        			dear
+        		</div>
+        		<!-- <img src="img/good_morning(1024x682).jpg"/> -->
         	</div>
         </div>
 
