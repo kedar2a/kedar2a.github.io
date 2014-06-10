@@ -53,22 +53,39 @@
 
 	<style type="text/css">
 
-	html, body { height:100%; }
+		html, body { height:100%; }
 
-		#morning-div{
+		body { overflow: hidden; }
+
+		.text-left{ text-align: left; }
+		.text-center{ text-align: center; }
+		.text-right{ text-align: right; }
+
+		.center{
+
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+		#day-timing-div{
 
 			background-color: #808080;
 	    	background-image: url("img/good_morning(1024x682).jpg");
 	    	height: 100vh;
 		}
 
-		.main-big-text{
-			color: #FFFFFF;
-    display: block;
-    font-size: 7em;
-    margin-left: 13%;
-    margin-right: 13%;
-    padding-top: 20%;
+
+		#blessing-text{
+			
+			/*background-color: #C0C0C0;*/
+		    position: relative;
+		    padding-top: 22%;
+		    width: 8em;
+		    color: #FFFFFF;
+		    font-family: "georgia, serif";
+		    font-size: 5em;
 		}
 
 		/*#morning-div img {*/
@@ -98,13 +115,12 @@
         <!-- ::::::::::::::::: Body content ::::::::::::::::: -->
 
         <div>
-        	<div id="morning-div" >
-        		<div class="main-big-text">
+        	<div id="day-timing-div">
+        		<div id="blessing-text" class="center">
         			Good Morning,
-        			<br>
+        			<br/>
         			dear
         		</div>
-        		<!-- <img src="img/good_morning(1024x682).jpg"/> -->
         	</div>
         </div>
 
@@ -124,24 +140,29 @@
         <script>
 
         	// Deciding time at client side
-      //       var now = new Date();
+            var now = new Date();
 
-      //       if ((now.getHours() >= 20) && (now.getMinutes() > 0) )
-      //       {   
-      //       	alert("Hello Dear"); 
-      //       }
-      //   	else if ((now.getHours() >= 17) && (now.getMinutes() > 0) )
-      //       {
-      //       	alert("Good Evening ! dear,");
-    		// }
-    		// else if ((now.getHours() >= 11) && (now.getMinutes() > 30) )
-      //       {
-      //       	alert("Good Afternoon ! dear,");
-    		// }
-    		// else if ((now.getHours() >= 4) && (now.getMinutes() > 0) )
-      //       {
-      //       	alert("Good Morning ! dear,");
-    		// }
+            if ((now.getHours() >= 20) && (now.getMinutes() > 0) )
+            {   
+            	// alert("Hello Dear"); 
+            	// $("#day-timing-div").
+            	$("#blessing-text").html("Hello there,");
+            }
+        	else if ((now.getHours() >= 17) && (now.getMinutes() > 0) )
+            {
+            	// alert("Good Evening ! dear,");
+            	$("#blessing-text").html("Good Evening,<br/>dear");
+    		}
+    		else if ((now.getHours() >= 11) && (now.getMinutes() > 30) )
+            {
+            	// alert("Good Afternoon ! dear,");
+            	$("#blessing-text").html("Good Afternoon,<br/>dear");            	
+    		}
+    		else if ((now.getHours() >= 4) && (now.getMinutes() > 0) )
+            {
+            	// alert("Good Morning ! dear,");
+            	$("#blessing-text").html("Good Morning,<br/>dear");
+    		}
 
 
             // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
