@@ -79,8 +79,7 @@
 		    width: 8em;*/
 		    color: #FFFFFF;
 		    font-family: "georgia, serif";
-		    top: 35%;
-		    left:30%;
+		    top: 35%;	left:30%;
 		}
 
 	</style>
@@ -102,6 +101,26 @@
         		</figcaption>
         	</figure>
         </div>
+        
+        <div id="about-me">
+        	About me
+        </div>
+
+        <div id="work">
+        	Work
+        </div>
+
+        <div id="projects">
+        	Projects
+        </div>
+
+        <div id="contact">
+        	Contact
+        </div>
+
+        <div id="bye">
+        	Bye !
+        </div>
 
         <!-- ::::::::::::::::: The end Of Body content ::::::::::::::::: -->
 
@@ -121,25 +140,20 @@
         	// Deciding time at client side
             var now = new Date();
 
-            if ((now.getHours() >= 20)/* && (now.getMinutes() > 0)*/ )
+            if (now.getHours() >= 20)
             {   
-            	// alert("Hello Dear"); 
-            	// $("#day-timing-div").
             	$("#blessing-text").html("Hello there,");
             }
-        	else if ((now.getHours() >= 17) /*&& (now.getMinutes() > 0)*/ )
+        	else if (now.getHours() >= 17)
             {
-            	// alert("Good Evening ! dear,");
             	$("#blessing-text").html("Good Evening,<br/>dear");
     		}
     		else if ((now.getHours() >= 11) /*&& (now.getMinutes() > 30)*/ )
             {
-            	// alert("Good Afternoon ! dear,");
             	$("#blessing-text").html("Good Afternoon,<br/>dear");            	
     		}
     		else if ((now.getHours() >= 4) /*&& (now.getMinutes() > 0)*/ )
             {
-            	// alert("Good Morning ! dear,");
             	$("#blessing-text").html("Good Morning,<br/>dear");
     		}
 
