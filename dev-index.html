@@ -55,31 +55,38 @@
 
 		html, body { height:100%; }
 
-		body { overflow: hidden; }
-
-		.text-left{ text-align: left; }
+		.text-left	{ text-align: left; }
 		.text-center{ text-align: center; }
-		.text-right{ text-align: right; }
+		.text-right	{ text-align: right; }
 
-		.center{ display: block;  margin-left: auto;  margin-right: auto;  }
+		.center-block { display: block;  margin-left: auto;  margin-right: auto;  }
 
+		.fulldivs{
 
-		#day-timing-div{
-
-			background-color: #808080;
-	    	/*background-image: url("img/good_morning(1024x682).jpg");*/
+			overflow: hidden;
 	    	height: 100vh;
+			/*background-color: #808080;*/
+		}
+
+		#blessing-div{
+
 		}
 		
 		#blessing-text{
 			
-			/*background-color: #C0C0C0;*/
-		    position: absolute;
-		    /*padding-top: 22%;
-		    width: 8em;*/
-		    color: #FFFFFF;
+			background-color: #c0c0c0;
+
+		    color: #ffffff;
 		    font-family: "georgia, serif";
-		    top: 35%;	left:30%;
+		    font-size: 3.5vw;
+		    
+		    position: absolute;
+		    height: 20vh; 	width: 30vw;
+		    left: 35vw; 	top: 35vh;
+		}
+
+		#about-me{
+			margin: 10vh 10vw;
 		}
 
 	</style>
@@ -92,33 +99,49 @@
 
         <!-- ::::::::::::::::: Body content ::::::::::::::::: -->
 
-        <div id="day-timing-div">
+        <div id="blessing-div" class="fulldivs">
         	<figure>
         		<img src="img/good_morning(1024x682).jpg"/>
         		<figcaption>
-        			<h1  id="blessing-text"></h1>
-        			<!-- Good Morning,<br/>dear -->
+        			<div id="blessing-text">
+        				<!-- Good Morning,<br/>dear -->
+        			</div>        			
         		</figcaption>
         	</figure>
         </div>
         
-        <div id="about-me">
-        	About me
+        <div id="about-me" class="fulldivs">
+        	
+        	<!-- heading -->
+        	<div class="row">
+        		<div class="small-4 small-centered columns text-center">
+        			About me
+        		</div>
+        	</div>        	
+
+        	<!-- heading -->
+        	<div class="row">
+        		<div class="small-12 small-centered columns text-center">
+        			s;gas;gjksl;gkjs; d fgklskldjgls;k d jg s l k djgl;sk dgjksjdlgksd,hskldj sjkldhkld fgsdfgsdfg sgfsdgsdg sdsd
+        			sdgggggggg sdgggggggggggg dasfasdf
+        		</div>
+        	</div>
+
         </div>
 
-        <div id="work">
+        <div id="work" class="fulldivs">
         	Work
         </div>
 
-        <div id="projects">
+        <div id="projects" class="fulldivs">
         	Projects
         </div>
 
-        <div id="contact">
+        <div id="contact" class="fulldivs">
         	Contact
         </div>
 
-        <div id="bye">
+        <div id="bye" class="fulldivs">
         	Bye !
         </div>
 
