@@ -74,7 +74,7 @@
 		
 		#blessing-text{
 			
-			background-color: #c0c0c0;
+			/*background-color: #c0c0c0;*/
 
 		    color: #ffffff;
 		    font-family: "georgia, serif";
@@ -165,7 +165,7 @@
 
             if (now.getHours() >= 20)
             {   
-            	$("#blessing-text").html("Hello there,");
+            	$("#blessing-text").fadeOut().text("Hello there,").fadeIn(10000);
             }
         	else if (now.getHours() >= 17)
             {
