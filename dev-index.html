@@ -79,9 +79,9 @@
 		    color: #ffffff;
 		    font-family: "georgia, serif";
 		    font-size: 3.5vw;
-		    
+		    opacity: 0;
 		    position: absolute;
-		    height: 20vh; 	width: 30vw;
+		    /*height: 20vh; 	width: 30vw;*/
 		    left: 35vw; 	top: 35vh;
 		}
 
@@ -152,6 +152,7 @@
         
         <!-- Including all js scripts -->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.0.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.velocity.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
@@ -165,7 +166,13 @@
 
             if (now.getHours() >= 20)
             {   
-            	$("#blessing-text").fadeOut().text("Hello there,").fadeIn(10000);
+            	// $("#blessing-text").fadeOut().text("Hello there,").fadeIn(10000);
+                $("#blessing-text")
+                    .text("Hello there,")
+                    .velocity({ 
+                                properties: { opacity: 1, height: 20+"vh", width: 30+"vw" },
+                                options: { duration: 5000 }
+                            });
             }
         	else if (now.getHours() >= 17)
             {
