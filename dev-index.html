@@ -164,7 +164,7 @@
         	// Deciding time at client side
             var now = new Date();
 
-            if (now.getHours() >= 20)
+            if (now.getHours() >= 20) // General 8pm - 4am
             {   
             	// $("#blessing-text").fadeOut().text("Hello there,").fadeIn(10000);
                 $("#blessing-text")
@@ -174,15 +174,15 @@
                                 options: { duration: 5000 }
                             });
             }
-        	else if (now.getHours() >= 17)
+        	else if (now.getHours() >= 17) // Evening 5pm - 8pm
             {
             	$("#blessing-text").html("Good Evening,<br/>dear");
     		}
-    		else if ((now.getHours() >= 11) /*&& (now.getMinutes() > 30)*/ )
+    		else if ((now.getHours() >= 11) // Afternoon 11am - 5pm
             {
             	$("#blessing-text").html("Good Afternoon,<br/>dear");            	
     		}
-    		else if ((now.getHours() >= 4) /*&& (now.getMinutes() > 0)*/ )
+    		else if ((now.getHours() >= 4) // Morning 4am - 11am
             {
             	$("#blessing-text").html("Good Morning,<br/>dear");
     		}
