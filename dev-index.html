@@ -83,11 +83,11 @@
 
 		    color: #ffffff;
 		    font-family: "georgia, serif";
-		    font-size: 3.5vw;
+		    font-size: 2.5vw;
 		    opacity: 0;
 		    position: absolute;
 		    height: 20vh; 	width: 30vw;
-		    left: 35vw; 	top: 35vh;
+		    left: 40vw; 	top: 35vh;
 		}
 
         /*@media screen and (max-width: 1024px) { */
@@ -179,9 +179,12 @@
                 $("#blessing-text")
                     .html(blessingText)
                     .velocity({ 
-                                properties: { opacity: 1 },
-                                options: { duration: 5000 }
-                            });
+                                properties: { opacity: 1,  },
+                                options: { duration: "slow" }
+                            })
+                    .velocity({ scale: 2 }, { duration: 1000 })//;
+                    // .velocity("transition.slideUp", { duration: 1000 });
+
 
             }
 
